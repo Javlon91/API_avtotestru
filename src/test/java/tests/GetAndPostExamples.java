@@ -12,7 +12,7 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
 public class GetAndPostExamples {
-   // @Test
+    @Test
     public void testGet(){
 
         baseURI="https://reqres.in/api";
