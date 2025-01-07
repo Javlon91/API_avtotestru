@@ -12,7 +12,7 @@ import static io.restassured.module.jsv.JsonSchemaValidator.*;
 public class JSONchemaValidator {
     @Test
     public void testGet(){
-      baseURI = "https://reqres.in/api";//https://reqres.in/api/users?page=2
+      baseURI = "https://reqres.in/api";
         given()
                 .get("/users?page=2")
                 .then()

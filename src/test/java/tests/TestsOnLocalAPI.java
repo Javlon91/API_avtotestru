@@ -7,13 +7,13 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 
 public class TestsOnLocalAPI {
-   // @Test
+    @Test
     public void get(){
         baseURI = "http://localhost:3000";
         given().get("users").then().statusCode(200).log().all();
 
     }
-   // @Test
+    @Test
     public void post(){
         JSONObject request = new JSONObject();
         request.put("firstName","Muhammad");
@@ -31,7 +31,7 @@ public class TestsOnLocalAPI {
                 .statusCode(201);
 
     }
-   // @Test
+    @Test
     public void put(){
         JSONObject request = new JSONObject();
         request.put("firstName","Yusuf");
@@ -49,7 +49,7 @@ public class TestsOnLocalAPI {
                 .statusCode(200);
 
     }
-    //@Test
+    @Test
     public void patch(){
         JSONObject request = new JSONObject();
         request.put("lestName","Muhammad Yusuf");

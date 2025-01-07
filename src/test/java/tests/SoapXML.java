@@ -14,6 +14,6 @@ public class SoapXML  {
         given()
                 .contentType("text/xml")
                 .accept(ContentType.XML)
-                .body("wqw" );
+                .body("wqqq" );
     }
 }
